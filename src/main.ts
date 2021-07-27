@@ -11,19 +11,26 @@
 // platformBrowserDynamic().bootstrapModule(AppModule)
 //   .catch(err => console.error(err));
 
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import {Component} from '@angular/core';
 import {NgModule}      from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {Component} from '@angular/core';
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 
 @Component({
   selector: 'joke',
   template: `
-    <h1>What did the cheese say when it looked in the mirror?</h1>
-    <h2>Halloumi (Hello Me)</h2>
+    <h1>{{ setup }}</h1>
+    <h2>{{ punchline }}</h2>
   `
 })
 class JokeComponent {
+  setup: string;
+  punchline: string;
+
+  constructor() {
+    this.setup = 'What did the cheese say when it looked in the mirror?';
+    this.punchline = 'Halloumi (Hello Me)';
+  }
 }
 
 @NgModule({
