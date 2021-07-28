@@ -1,17 +1,17 @@
-// import { enableProdMode } from '@angular/core';
-// import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-//
-// import { AppModule } from './app/app.module';
-// import { environment } from './environments/environment';
-//
-// if (environment.production) {
-//   enableProdMode();
-// }
-//
-// platformBrowserDynamic().bootstrapModule(AppModule)
-//   .catch(err => console.error(err));
+import { enableProdMode } from '@angular/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { Component, NgModule, Input, Output, EventEmitter } from '@angular/core';
+import { AppModule } from './app/app.module';
+import { environment } from './environments/environment';
+
+if (environment.production) {
+  enableProdMode();
+}
+
+platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch(err => console.error(err));
+
+/* import { Component, NgModule, Input, Output, EventEmitter } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 // import EventEmitter = require('events');
@@ -146,3 +146,4 @@ class AppComponent { }
 export class AppModule { }
 
 platformBrowserDynamic().bootstrapModule(AppModule);
+ */
