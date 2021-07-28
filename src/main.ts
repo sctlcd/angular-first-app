@@ -11,8 +11,7 @@
 // platformBrowserDynamic().bootstrapModule(AppModule)
 //   .catch(err => console.error(err));
 
-import {Component} from '@angular/core';
-import {NgModule}      from '@angular/core';
+import {Component, NgModule, Input} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 
@@ -35,16 +34,26 @@ class Joke {
 
 let joke = new Joke("What did the cheese say when it looked in the mirror?", "Hello-Me (Halloumi)");
 
+// Joke Component
+@Component({
+  selector: 'joke',
+  template: `
+  <div class="card card-block my-4 py-3 px-3">
+    <h4 class="card-title">{{ data.setup }}</h4>
+    <p class="card-text" [hidden]="data.hide">{{ data.punchline }}</p>
+    <a class="btn btn-warning mr-auto" (click)="data.toggle()">Tell Me</a>
+  </div>
+  `
+})
+class JokeComponent {
+  @Input('joke') data!: Joke;
+}
+
 // Joke List Component
 @Component({
   selector: 'joke-list',
   template: `
-<div class="card card-block my-4 py-3 px-3"
-      *ngFor="let joke of jokes">
-  <h4 class="card-title">{{ joke.setup }}</h4>
-  <p class="card-text" [hidden]="joke.hide">{{ joke.punchline }}</p>
-  <a class="btn btn-warning mr-auto" (click)="joke.toggle()">Tell Me</a>
-</div>
+<joke *ngFor="let j of jokes" [joke]="j" ></joke>
 `
 })
 class JokeListComponent {
@@ -57,13 +66,28 @@ class JokeListComponent {
       new Joke("A kid threw a lump of cheddar at me", "I thought ‘That’s not very mature’")
     ];
   }
+}
+
+
+// App Component
+@Component({
+  selector: 'app',
+  template: `
+<joke-list></joke-list>
+`
+})
+class AppComponent {
 
 }
 
 @NgModule({
   imports: [BrowserModule],
-  declarations: [JokeListComponent],
-  bootstrap: [JokeListComponent]
+  declarations: [
+    JokeComponent,
+    JokeListComponent,
+    AppComponent
+  ],
+  bootstrap: [AppComponent]
 })
 export class AppModule {
 }
