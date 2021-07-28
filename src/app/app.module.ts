@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { JokeModule } from './joke/joke.module';
+import { JokeModuleModule } from './joke-module/joke-module.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,7 @@ import { JokeModule } from './joke/joke.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    JokeModule
+    JokeModuleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
