@@ -1,20 +1,6 @@
-// import { enableProdMode } from '@angular/core';
-// import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-//
-// import { AppModule } from './app/app.module';
-// import { environment } from './environments/environment';
-//
-// if (environment.production) {
-//   enableProdMode();
-// }
-//
-// platformBrowserDynamic().bootstrapModule(AppModule)
-//   .catch(err => console.error(err));
-
 import { Component, NgModule, Input, Output, EventEmitter } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-// import EventEmitter = require('events');
 
 // Joke class
 class Joke {
@@ -33,14 +19,12 @@ class Joke {
   }
 }
 
-// let joke = new Joke("What did the cheese say when it looked in the mirror?", "Hello-Me (Halloumi)");
-
 // Joke Form Component
 @Component({
   selector: 'joke-form',
   template: `
-    <div class="col-10 offset-1 card card-block my-5 py-3 px-3">
-      <h4 class="card-title text-center text-muted">Create a Joke</h4>
+    <div class="col-10 offset-1 card card-block my-4 py-3 px-3">
+      <h4 class="card-title text-center">Create a Joke</h4>
       <div class="form-group">
         <input
           type="text"
