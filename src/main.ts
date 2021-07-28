@@ -68,16 +68,15 @@ class JokeListComponent {
   }
 }
 
-
 // App Component
 @Component({
   selector: 'app',
   template: `
+<h1 class="my-5 text-center">Angular First App - Tell me a joke</h1>
 <joke-list></joke-list>
 `
 })
 class AppComponent {
-
 }
 
 @NgModule({
