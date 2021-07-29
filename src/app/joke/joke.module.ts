@@ -16,4 +16,4 @@ import { JokeFormComponent } from './joke-form/joke-form.component';
     CommonModule
   ]
 })
-export class JokeModuleModule { }
+export class JokeModule { }
