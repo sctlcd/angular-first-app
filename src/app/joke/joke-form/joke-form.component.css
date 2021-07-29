@@ -1,0 +1,13 @@
+input[type="text"], 
+button {
+    font-family: 'Lato', sans-serif;
+}
+
+input[type="text"] {
+    color: #333;
+    font-style: italic;
+}
+
+.card-title {
+    color: #6c757d;
+}
