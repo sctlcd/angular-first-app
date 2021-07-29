@@ -25,7 +25,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ### Deployment – Run Locally
 
 1. Prerequisite:  
-    In order to run an Angular project, you must have a Node JS development environment set up in your system. If you don’t have Node JS setup in your system then follow this link to `[Set up Node JS Development Environment](https://nodejs.org/en/download/)
+    In order to run an Angular project, you must have a Node JS development environment set up in your system. If you don’t have Node JS setup in your system then follow this link to [Set up Node JS Development Environment](https://nodejs.org/en/download/)
     
     Install Angular CLI (Ignore if Angular CLI is already installed.)
     ```
@@ -38,12 +38,15 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 5. Once you have chose your desired option, then click the copy icon next to the URL.
 6. Open Git Bash.
 7. Ensure you are in the correct directory which you want to copy the code into. If not, change the directory.
-8. In the terminal, write $ git clone https://github.com/sctlcd/angular-first-app_tell-me-a-joke.git
+8. In the terminal, write 
+    ````
+    $ git clone https://github.com/sctlcd/angular-first-app_tell-me-a-joke.git
+    ````
 9. Press the enter button and your clone will be created.
 
 ### Deployment - Live Website
 
-[Tell me a joke - live website](https://sctlcd-angular-first-app.web.app/) is currently deployed on [Firebase](https://firebase.google.com/) using the master branch on GitHub. Once you have the project setup locally, you can proceed to deploy it remotely.
+[Angular First App - Tell me a joke](https://sctlcd-angular-first-app.web.app/) live website is currently deployed on [Firebase](https://firebase.google.com/) using the master branch on GitHub. Once you have the project setup locally, you can proceed to deploy it remotely.
 
 1. Setup Basic Angular Project
 
@@ -111,7 +114,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     ng build --prod --aot
     ````
 
-    ````dist > your-project-name```` contains your project’s all compiled files
+    `dist > your-project-name` contains your project’s all compiled files
 
 6. Deploy your Angular App to Firebase Hosting
 
