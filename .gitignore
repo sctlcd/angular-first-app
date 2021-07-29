@@ -54,3 +54,9 @@ index.html
 
 # Virtual environment
 /env
+
+# Browser support
+.browserslistrc
+
+# Editor configuration
+.editorconfig
