@@ -8,6 +8,12 @@ input[type="text"] {
     font-style: italic;
 }
 
+.card,
+input,
+input:focus {
+    background-color: #f4f4f4;
+}
+
 .card-title {
     color: #6c757d;
 }
