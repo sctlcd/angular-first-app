@@ -1,5 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
+import { Joke } from './../joke/joke';
+
+
+// Joke Component
 @Component({
   selector: 'app-joke',
   templateUrl: './joke.component.html',
@@ -12,4 +16,5 @@ export class JokeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  @Input('joke') data!: Joke
 }

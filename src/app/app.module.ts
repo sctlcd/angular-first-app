@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { JokeModule } from './joke/joke.module';
 
+
+// App Module
 @NgModule({
   declarations: [
     AppComponent

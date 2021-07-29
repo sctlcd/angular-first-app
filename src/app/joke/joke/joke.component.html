@@ -1,1 +1,5 @@
-<p>joke works!</p>
+<div class="col-10 offset-1 card card-block my-4 py-3 px-3">
+    <h4 class="card-title">{{ data.setup }}</h4>
+    <p class="card-text" [hidden]="data.hide">{{ data.punchline }}</p>
+    <a class="btn btn-warning mr-auto" (click)="data.toggle()">Tell Me</a>
+</div>

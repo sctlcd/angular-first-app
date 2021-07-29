@@ -14,6 +14,11 @@ import { JokeFormComponent } from './joke-form/joke-form.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    JokeComponent,
+    JokeListComponent,
+    JokeFormComponent
   ]
 })
 export class JokeModule { }
