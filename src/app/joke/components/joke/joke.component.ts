@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { Joke } from './../joke/joke';
+import { Joke } from './joke';
 
 
 // Joke Component
