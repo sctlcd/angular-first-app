@@ -2,7 +2,6 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 import { Joke } from '../joke/joke';
 
-
 // Joke Form Component
 @Component({
   selector: 'app-joke-form',

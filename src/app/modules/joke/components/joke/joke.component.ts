@@ -17,4 +17,5 @@ export class JokeComponent implements OnInit {
   }
 
   @Input('joke') data!: Joke
+
 }
