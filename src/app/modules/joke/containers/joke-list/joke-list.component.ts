@@ -10,6 +10,7 @@ import { Joke } from '../../components/joke/joke';
   styleUrls: ['./joke-list.component.css']
 })
 export class JokeListComponent implements OnInit {
+
   jokes: Joke[];
 
   constructor() {

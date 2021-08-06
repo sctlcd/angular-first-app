@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { JokeModule } from './joke/joke.module';
+import { JokeModule } from './modules/joke/joke.module';
 
 
 // App Module
